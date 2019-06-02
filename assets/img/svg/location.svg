@@ -1,0 +1,9 @@
+<svg class="contacts--icon contacts--icon__tall" width="31px" height="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31 50" style="enable-background:new 0 0 31 50;" xml:space="preserve">
+		<style type="text/css">
+			.st05{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+		</style>
+		<g>
+			<path class="st05" d="M29.5,18.6c0,7.7-14,26.7-14,26.7s-14-19-14-26.7s6.2-14,14-14S29.5,10.9,29.5,18.6z"></path>
+			<circle class="st05" cx="15.5" cy="18.6" r="6.5"></circle>
+		</g>
+	</svg>

@@ -1,0 +1,11 @@
+<svg class="contacts--icon" width="38" height="29" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 38 29" style="enable-background:new 0 0 38 29;" xml:space="preserve">
+				<style type="text/css">
+					.st04{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+				</style>
+				<g>
+					<rect x="2.5" y="2.2" class="st04" width="33.1" height="24.5"></rect>
+					<polyline class="st04" points="35.5,2.2 19,18.3 2.5,2.2 	"></polyline>
+					<line class="st04" x1="35.5" y1="26.8" x2="23.7" y2="13.7"></line>
+					<line class="st04" x1="2.5" y1="26.8" x2="14.3" y2="13.7"></line>
+				</g>
+			</svg>
