@@ -290,7 +290,59 @@ a:hover{
 
 /* End Main page */ 
 
+.lawlinks_section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 
+.lawlinks_section .sectiion_heading{
+    font-size: 40px;
+    color: #2f3846;
+    margin-bottom: 40px;
+    font-family: "Georgia", sans-serif;
+}
+
+ul.lawlist{
+    list-style: none;
+}
+
+.lawlist li{
+    position: relative;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.lawlist li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -65px;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    background: url(assets/img/svg/trident.svg) center/contain no-repeat;
+}
+
+.lawlist li a:hover{ 
+    text-decoration: underline;
+}
+
+
+.contact_form_section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contact_form_section .sectiion_heading{
+    font-size: 40px;
+    color: #2f3846;
+    margin-bottom: 40px;
+    font-family: "Georgia", sans-serif;
+}
+
+.contact_form_section input{
+    max-width: 150px;
+}
 
 
 /*** Start Media query ***/

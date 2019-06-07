@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<meta name="description" content="Uber-Partners - Ваш надежный партнер Uber в Киеве, Харькове, Львове и Одессе">
+	<meta name="description" content="Корецька Ірина - приватний судовий виконавець Виконавчого округу м.Києва - послуги, консультація, допомога ☎ (067) 123-40-47">
 	
-	<title><?php echo "Uber-Partners | "; the_title(); ?></title>
+	<title><?php echo "Приватний виконавець Київ: послуги судового виконавця"; ?></title>
 	<?php wp_head(); ?>
 </head>
 
