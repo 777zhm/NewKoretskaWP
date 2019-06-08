@@ -1,0 +1,21 @@
+<?php /* Template Name: Service Item page ukr */ ?>
+<?php get_header(); ?>
+
+<div id="primary" class="content-area service_item_section">
+	<main id="main" class="site-main container" role="main">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h2 class="sectiion_heading"><?php the_title( $before = '', $after = '', $echo = true ) ?></h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<?php the_content(); ?>
+				<?php endwhile; endif; ?>
+			</div>
+		</div>
+	</main>
+</div>
+
+<?php get_footer(); ?>
