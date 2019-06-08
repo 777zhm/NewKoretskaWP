@@ -81,16 +81,24 @@ a:hover{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
+    padding-bottom: 18px;
 }
 
 .footer .contacts_icon{
-    margin-right: 20px;
+    min-width: 60px;
+    text-align: center;
 
     -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     -o-transition: transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.footer .contacts_icon img{
+   max-width: 44px;
+   height: auto;
 }
 
 .footer .contacts_item:hover .contacts_icon{
@@ -181,6 +189,71 @@ a:hover{
     width: 100%;
 }
 /* End Main Menu */
+/* Start Mobile Menu */
+.burger_open_box {
+    text-align: right;
+    font-size: 1em;
+}
+
+.burger_open {
+    position: relative;
+    color: #ffffff;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.burger_close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    font-family: arial;
+    font-size: 50px;
+    color: #F8F8F9;
+    cursor: pointer;
+
+    z-index: 99;
+}
+
+.burger_nav {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    
+    top: 0;
+    left: 0;
+
+    background-color: rgba(34, 32, 33, 0.9);
+    overflow-x: hidden;
+    
+    z-index: 10;
+
+    transition: 0.5s;
+}
+
+.burger_nav ul{
+    text-align: center;
+    padding-left: 0;
+    padding-top: 120px;
+}
+
+.burger_nav ul li{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.burger_nav a{
+    display: block;
+    text-decoration: none;
+    color: #F8F8F9;
+    font-size: 1.5em;
+}
+
+.burger_nav a:hover{
+    color: #dab578;
+}
+/* End Mobile Menu */
 /* Start Main page */
 .heroscreen_section{
     background-size: 70%;
@@ -206,9 +279,50 @@ a:hover{
     font-family: Georgia, sans-serif;
 }
 
+/* Start Buttons */
+.callback_btn{
+    display: inline-block;
+    padding: 8px 20px;
+    margin-bottom: 36px;
+
+    background-color: #2b4361;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    color: #ffffff;
+    
+    font-size: 18px;
+
+}
+
+.callback_btn:hover{
+    background-color: #ffffff;
+    border: 1px solid #2b4361;
+    color: #2b4361;
+}
+
+.button_submit{
+    display: inline-block;
+    padding: 8px 20px;
+    margin-bottom: 36px;
+
+    background-color: #2b4361;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.button_submit:hover{
+    background-color: #ffffff;
+    border: 1px solid #2b4361;
+    color: #2b4361;
+}
+
+/* End Buttons */
 
 .sectiion_heading{
-    padding-bottom: 36px;
+    padding-top: 32px;
+    padding-bottom: 18px;
 }
 
 .features_section{

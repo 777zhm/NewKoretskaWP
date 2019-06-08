@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 <div id="primary" class="content-area service_item_section">
-	<main id="main" class="site-main container" role="main">
+	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<h2 class="sectiion_heading"><?php the_title( $before = '', $after = '', $echo = true ) ?></h2>
@@ -15,7 +15,7 @@
 				<?php endwhile; endif; ?>
 			</div>
 		</div>
-	</main>
+	</div>
 </div>
 
 <?php get_footer(); ?>

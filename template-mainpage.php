@@ -8,8 +8,8 @@
 			<div class="col-md-8">
 				<h1>Корецька Ірина</h1>
 				<p class="subheading">Приватний виконавець Виконавчого округу м. Києва</p>
-				<a class="callback" href="tel:+380671234047">
-					<span class="callback--text">Отримати консультацію</span>
+				<a class="callback_btn" href="tel:+380671234047">
+					Отримати консультацію
 				</a>
 			</div>
 		</div>
@@ -66,7 +66,7 @@
 				</a>
 			</div>
 			<div class="col-md-3 service_item">
-				<a href="#">
+				<a href="/poslugy/aresht-koshtiv/">
 					<img class="service_icon" src="<?php assets_url('img/svg/service_2.svg') ?>" alt="service_icon">
 					<br>
 					<span class="service_text">Арешт коштів</span>

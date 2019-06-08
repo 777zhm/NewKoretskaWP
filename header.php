@@ -16,17 +16,24 @@
 <header class="header">
 	<div class="container-fluid">
 		<div class="row justify-content-between align-items-center">
-			<div class="logotype col-lg-2">
+			<div class="burger_open_box d-lg-none col-md-2 col-sm-3 col-3 text-center">
+				<span class="burger_open d-lg-none" id="burger_open">&#9776;</span>
+			</div>
+			<div class="logotype col-lg-2 col-md-2 col-sm-6 col-6 text-center">
 				<?php if ( has_custom_logo() ) : the_custom_logo(); endif; ?>	
 			</div>
-			<div class="main_menu col-lg-8 text-center">
+			<div class="main_menu col-lg-8 col-md-8 d-none d-lg-block text-center">
 				<?php wp_nav_menu( array('theme_location' => 'main_menu') ); ?>
 			</div>
-			<div class="ukraine_symbols col-lg-2 text-right">
+			<div class="ukraine_symbols col-lg-2 col-md-2 col-sm-3 col-3 text-center">
 				<img class="flag" src="<?php assets_url('img/flag.png') ?>" alt="flag">
 				<img class="trident" src="<?php assets_url('img/trident.png') ?>" alt="trident">
 			</div>
 		</div>
+	</div>
+	<div id="burger_nav" class="burger_nav">
+		<span class="burger_close" id="burger_close">&times;</span>
+		<?php wp_nav_menu( array('theme_location' => 'main_menu') ); ?>
 	</div>
 </header>
 

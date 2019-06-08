@@ -4,38 +4,50 @@
 	
 		<div class="container-fluid">
 			<div class="row contacts_row">
-				<div class="col-md-3 contacts_item">
+				<div class="col-lg-3 col-md-6 col-sm-12 contacts_item">
 					<div class="contacts_icon">
-						<img src="<?php assets_url('img/telephone.png') ?>" alt="telephone">
+						<img src="<?php assets_url('img/svg/telephone.svg') ?>" alt="telephone">
 					</div>
 					<div class="contacts_link">
-						<a href="tel:+380442214047" class="contacts_link">+38 (044) 221 40 47</a>
+						<a href="tel:<?php the_field('admin_tel_1', 'theme_settings'); ?>"><?php the_field('admin_tel_1', 'theme_settings'); ?></a>
 						<br>
-						<a href="tel:+380671234047" class="contacts_link">+38 (067) 123 40 47</a>
+						<a href="tel:<?php the_field('admin_tel_2', 'theme_settings'); ?>"><?php the_field('admin_tel_2', 'theme_settings'); ?></a>
 					</div>
 				</div>
-				<div class="col-md-3 contacts_item">
+				<div class="col-lg-3 col-md-6 col-sm-12 contacts_item">
 					<div class="contacts_icon">
-						<img src="<?php assets_url('img/email.png') ?>" alt="email">
+						<img src="<?php assets_url('img/svg/email.svg') ?>" alt="email">
 					</div>
 					<div class="contacts_link">
-						<a href="mailto:info@koretska-legal.com" class="contacts_link">info@koretska-legal.com</a>
+						<a href="mailto:<?php the_field('admin_email', 'theme_settings'); ?>"><?php the_field('admin_email', 'theme_settings'); ?></a>
 					</div>
 				</div>
-				<div class="col-md-3 contacts_item">
+				<div class="col-lg-3 col-md-6 col-sm-12 contacts_item">
 					<div class="contacts_icon">
-						<img src="<?php assets_url('img/facebook.png') ?>" alt="facebook">
+						<img src="<?php assets_url('img/svg/facebook.svg') ?>" alt="facebook">
 					</div>
 					<div class="contacts_link">
-						<a href="https://www.facebook.com/" class="contacts_link">Facebook</a>
+						<?php $link = get_field('admin_facebook_link', 'theme_settings'); ?>
+						<?php if( $link ): 
+							$link_url = $link['url'];
+							$link_title = $link['title'];
+						?>
+						<a href="<?php echo esc_url($link_url); ?>" target="_blank"><?php echo esc_html($link_title); ?></a>
+						<?php endif; ?>
 					</div>
 				</div>
-				<div class="col-md-3 contacts_item">
+				<div class="col-lg-3 col-md-6 col-sm-12 contacts_item">
 					<div class="contacts_icon">
-						<img src="<?php assets_url('img/location.png') ?>" alt="location">
+						<img src="<?php assets_url('img/svg/location.svg') ?>" alt="location">
 					</div>
 					<div class="contacts_link">
-						<a href="https://www.google.com.ua/maps/place/Vector/@50.4476284,30.5070038,16.83z/data=!4m8!1m2!2m1!1z0LwuINCa0LjRl9CyLCDQstGD0LsuINCRLiDQpdC80LXQu9GM0L3QuNGG0YzQutC-0LPQviwgNTIg0JHQpiAi0JLQtdC60YLQvtGAIg!3m4!1s0x40d4ce5f34e48cbd:0xa6799624b9e00686!8m2!3d50.4484033!4d30.5064369?hl=ru" target="blank" class="contacts_link">м. Київ, вул. Б. Хмельницького, 52 <br> БЦ "Vector", оф. 414 </a>
+					<?php $link = get_field('admin_address_link', 'theme_settings'); ?>
+					<?php if( $link ): 
+						$link_url = $link['url'];
+						$link_title = $link['title'];
+					?>
+						<a href="<?php echo esc_url($link_url); ?>" target="_blank"><?php echo esc_html($link_title); ?></a>
+					<?php endif; ?>
 					</div>
 				</div>			
 			</div>
