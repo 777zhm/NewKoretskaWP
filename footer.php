@@ -2,7 +2,7 @@
 
 <footer class="footer" style="background-image: url(<?php assets_url('img/footer_bg.jpg') ?>);">
 	
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row contacts_row">
 				<div class="col-lg-3 col-md-6 col-sm-12 contacts_item">
 					<div class="contacts_icon">

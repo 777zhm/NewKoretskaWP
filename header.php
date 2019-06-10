@@ -14,7 +14,7 @@
 <body <?php body_class(); ?>>
 
 <header class="header">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row justify-content-between align-items-center">
 			<div class="burger_open_box d-lg-none col-md-2 col-sm-3 col-3 text-center">
 				<span class="burger_open d-lg-none" id="burger_open">&#9776;</span>
