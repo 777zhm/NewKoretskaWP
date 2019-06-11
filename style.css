@@ -60,12 +60,14 @@ a:hover{
 }
 
 .footer{
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 20px;
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
     background-size: cover;
+    font-family: GothamPro, sans-serif;
+
 }
 
 .footer a{
@@ -84,10 +86,12 @@ a:hover{
     align-items: center;
 
     padding-bottom: 18px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .footer .contacts_icon{
-    min-width: 60px;
+    min-width: 40px;
     text-align: center;
 
     -webkit-transition: -webkit-transform 0.3s;
@@ -110,6 +114,7 @@ a:hover{
 
 .footer .contacts_link{
     text-align: left;
+    padding-left: 8px;
 
     -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
@@ -128,8 +133,8 @@ a:hover{
 .footer .logotype img{
     max-height: 120px;
     width: auto;
-    margin-top: 60px;
-    margin-bottom: 100px;
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
 
 
@@ -190,6 +195,63 @@ a:hover{
     width: 100%;
 }
 /* End Main Menu */
+/* Start Lang Menu */
+.lang_menu {
+    text-align: right;
+    font-size: 1em;
+}
+
+.lang_menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.lang_menu ul li {
+    display: inline-block;
+    margin-left: 26px;
+    font-size: 1em;
+}
+
+.lang_menu ul li a {
+    display: inline-block;
+    position: relative;
+    padding: 5px 0 5px;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: "GothamPro", sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+
+}
+
+.lang_menu ul li a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.lang_menu ul li a:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #ffffff;
+    border-radius: 2px;
+
+    width: 0%;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.lang_menu ul li a:hover:after {
+    width: 100%;
+}
+
+/* End Lang Menu */
 /* Start Mobile Menu */
 .burger_open_box {
     text-align: right;
@@ -199,18 +261,18 @@ a:hover{
 .burger_open {
     position: relative;
     color: #ffffff;
-    font-size: 32px;
+    font-size: 26px;
     cursor: pointer;
     z-index: 5;
 }
 
 .burger_close {
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 8px;
+    right: 20px;
 
     font-family: arial;
-    font-size: 50px;
+    font-size: 46px;
     color: #F8F8F9;
     cursor: pointer;
 
@@ -319,29 +381,46 @@ a:hover{
 
 
 .button_submit{
-    display: inline-block;
-    padding: 8px 20px;
-    margin-bottom: 36px;
+    display: block;
+    padding: 15px 30px;
+    margin: 30px auto 0px;
+    background-color: #a8d7ef;
+    border: none;
+    -webkit-border-radius: 29px;
+    border-radius: 29px;
+    font: inherit;
+    font-weight: bold;
 
-    background-color: #2b4361;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-    color: #ffffff;
-    font-size: 18px;
 }
 
 .button_submit:hover{
-    background-color: #ffffff;
-    border: 1px solid #2b4361;
-    color: #2b4361;
+
+}
+
+.form_hint{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #c6cfda;
+    margin-bottom: 0;
+}
+
+.form_hint_link{
+    margin-left: 30px;
+    color: #8dbcf1;
+}
+
+.form_hint_link:hover{
+    text-decoration: underline;
 }
 
 /* End Buttons */
 
-.sectiion_heading{
+.section_heading{
     font-size: 36px;
     letter-spacing: 1.5px;
-    color: #979797;
+    /*color: #979797;*/
     margin-top: 32px;
     margin-bottom: 32px;
 }
@@ -352,7 +431,7 @@ a:hover{
     padding: 40px 10px;
 }
 
-.features_section .sectiion_heading{
+.features_section .section_heading{
     color: #ffffff;
 }
 
@@ -439,10 +518,10 @@ a:hover{
 
 .lawlinks_section{
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
-.lawlinks_section .sectiion_heading{
+.lawlinks_section .section_heading{
     font-size: 40px;
     color: #2f3846;
     margin-bottom: 40px;
@@ -457,13 +536,15 @@ ul.lawlist{
     position: relative;
     font-size: 16px;
     margin-bottom: 30px;
+    padding-left: 20px;
+    color: #797979;
 }
 
 .lawlist li::before {
     content: "";
     position: absolute;
     top: 50%;
-    left: -65px;
+    left: -45px;
     transform: translateY(-50%);
     width: 35px;
     height: 35px;
@@ -479,13 +560,21 @@ ul.lawlist{
     cursor: pointer;
 }
 
-
 .contact_form_section{
+    background-color: #2B4261;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.contact_form_section .sectiion_heading{
+.contact_form_box{
+    font-family: "GothamPro", sans-serif;
+    background-color: #fff;
+    padding: 50px 40px 25px 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+}
+
+.contact_form_section .section_heading{
     font-size: 40px;
     color: #2f3846;
     margin-bottom: 40px;
@@ -494,6 +583,33 @@ ul.lawlist{
 
 .contact_form_section input{
     max-width: 150px;
+}
+
+.contact_heading{
+    font-size: 36px;
+    font-family: Georgia, sans-serif;
+    letter-spacing: 1.5px;
+    color: #000000;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.form_text{
+    display: block;
+    vertical-align: bottom;
+    margin-bottom: 20px;
+    color: #40597a;
+}
+
+.wpcf7-text{
+    margin-top: -2px;
+    font: inherit;
+    border: none;
+    color: #40597a;
+    border-bottom: 2px solid #d2deeb;
+    outline: none;
+    text-align: center;
 }
 
 
@@ -518,6 +634,21 @@ ul.lawlist{
 /* Start max-width: 575px */
 @media (max-width: 575px)  {
 
+.footer .contacts_item{
+    padding-left: 10px;
+}
+
+.contact_form_box{
+    background-color: #fff;
+    padding: 25px 15px 25px 15px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.lawlinks_section .section_heading{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
 
 } /* End max-width: 575px */
 /*** End Media query ***/

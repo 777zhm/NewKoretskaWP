@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h2 class="sectiion_heading"><?php the_title( $before = '', $after = '', $echo = true ) ?></h2>
+				<h2 class="section_heading"><?php the_title( ); ?></h2>
 			</div>
 		</div>
 		<div class="row">

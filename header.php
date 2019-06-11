@@ -25,9 +25,8 @@
 			<div class="main_menu col-lg-8 col-md-8 d-none d-lg-block text-center">
 				<?php wp_nav_menu( array('theme_location' => 'main_menu') ); ?>
 			</div>
-			<div class="ukraine_symbols col-lg-2 col-md-2 col-sm-3 col-3 text-center">
-				<img class="flag" src="<?php assets_url('img/flag.png') ?>" alt="flag">
-				<img class="trident" src="<?php assets_url('img/trident.png') ?>" alt="trident">
+			<div class="lang_menu col-lg-2 col-md-2 col-sm-3 col-3 text-center">
+				<?php wp_nav_menu( array('theme_location' => 'lang_menu') ); ?>
 			</div>
 		</div>
 	</div>

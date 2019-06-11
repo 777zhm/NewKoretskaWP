@@ -6,7 +6,8 @@ add_theme_support( 'custom-logo' );
 
 add_action('after_setup_theme', function(){
 	register_nav_menus( array(
-		'main_menu' => 'Main menu'
+		'main_menu' => 'Main menu',
+		'lang_menu' => 'Lang menu'
 	) );
 });
 
@@ -14,8 +15,8 @@ function assets_url( $pass ){
 	echo get_template_directory_uri().'/assets/'.$pass;
 }
 
-remove_filter( 'the_content', 'wpautop' );
-remove_filter( 'the_excerpt', 'wpautop' );
+remove_filter( 'the_content', 'wpautop', 3 );
+remove_filter( 'the_excerpt', 'wpautop', 3 );
 
 /*
  * Enqueue theme scripts and styles.
