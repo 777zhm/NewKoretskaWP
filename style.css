@@ -513,6 +513,12 @@ a:hover{
 
 }
 
+.seo_section .section_heading{
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    margin-top: 32px;
+    margin-bottom: 18px;
+}
 
 /* End Main page */ 
 
