@@ -2,10 +2,10 @@
 <div class="heroscreen_section" style="background-image: url(<?php assets_url('img/heroscreen_bg.jpg') ?>);">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-lg-8 col-md-7 col-sm-10">
 				<h1><?php the_field('section_heading');?></h1>
 				<p class="subheading"><?php the_field('section_subheading');?></p>
-				<a class="callback" href="tel:+380671234047">
+				<a class="callback" href="tel:<?php the_field('admin_tel_1', 'theme_settings'); ?>">
 					<svg class="callback_icon" version="1.1" viewBox="0 0 23 33" xmlns="http://www.w3.org/2000/svg">
 						<g transform="translate(-251 -566)" fill="#83817F" fill-rule="nonzero">
 							<g transform="translate(218 546)">
