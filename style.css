@@ -41,7 +41,6 @@ a:hover{
 .section_heading{
     font-size: 36px;
     letter-spacing: 1.5px;
-    /*color: #979797;*/
     margin-top: 32px;
     margin-bottom: 32px;
 }
@@ -60,6 +59,11 @@ a:hover{
         max-height: 76px;
         width: auto;
         margin-top: 4px;
+}
+
+.header_contacts{
+    color: #ffffff;
+    font-family: "GothamPro", sans-serif;
 }
 
 .header .flag{
@@ -523,7 +527,56 @@ a:hover{
     align-items: flex-end;
 
 }
-/* End Services page */ 
+/* End Services page */
+/* Start Service Item page */
+.service_item_section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.service_item_block{
+    color: #797979;
+    font-family: 'Gotham Pro', sans-serif;
+    line-height: 1.46;
+}
+
+blockquote {
+    border-left: 2px solid #797979;
+    padding-left: 40px;
+    margin-left: -13px;
+}
+
+blockquote p{
+    color: #000;
+    margin-bottom: 23px;
+}
+
+.service_item_block ul{
+    list-style: none;
+}
+
+.service_item_block ul li::before {
+  color: #006b6e;  
+  /* color of bullet or square */
+
+  content: "\2022"; 
+  /* Unicode of character to precede the list item */
+
+  font-size: 1em; 
+  /* em or %*/
+ 
+  padding-right: 1.1225em; 
+  /* use em*/
+
+  position: relative;
+  top: 0em; 
+  /* use em or % */
+
+}
+
+
+
+/* End Service Item page */
 /* Start Law list page */
 .lawlinks_section{
     padding-top: 40px;

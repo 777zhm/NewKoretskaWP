@@ -16,16 +16,21 @@
 <header class="header">
 	<div class="container">
 		<div class="row justify-content-between align-items-center">
-			<div class="burger_open_box d-lg-none col-md-2 col-sm-3 col-3 text-center">
+			<div class="burger_open_box d-lg-none col-md-1 col-sm-3 col-3 text-center">
 				<span class="burger_open d-lg-none" id="burger_open">&#9776;</span>
 			</div>
-			<div class="logotype col-lg-2 col-md-2 col-sm-6 col-6 text-center">
+			<div class="logotype col-lg-1 col-md-2 col-sm-6 col-6 text-center">
 				<?php if ( has_custom_logo() ) : the_custom_logo(); endif; ?>	
 			</div>
-			<div class="main_menu col-lg-8 col-md-8 d-none d-lg-block text-center">
+			<div class="main_menu col-lg-7 d-none d-lg-block text-center">
 				<?php wp_nav_menu( array('theme_location' => 'main_menu') ); ?>
 			</div>
-			<div class="lang_menu col-lg-2 col-md-2 col-sm-3 col-3 text-center">
+			<div class="header_contacts col-lg-3 d-none d-lg-block text-center">
+				<a href="tel:<?php the_field('admin_tel_1', 'theme_settings'); ?>"><?php the_field('admin_tel_1', 'theme_settings'); ?></a>
+				<a href="mailto:<?php the_field('admin_email', 'theme_settings'); ?>"><?php the_field('admin_email', 'theme_settings'); ?></a>
+			</div>
+
+			<div class="lang_menu col-lg-1 col-md-1 col-sm-3 col-3 text-center">
 				<?php wp_nav_menu( array('theme_location' => 'lang_menu') ); ?>
 			</div>
 		</div>
