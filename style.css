@@ -208,6 +208,7 @@ a:hover{
 .main_menu ul li a:hover:after {
     width: 100%;
 }
+
 /* End Main Menu */
 /* Start Lang Menu */
 .lang_menu {
@@ -420,6 +421,18 @@ a:hover{
     text-align: center;
     font-family: GothamPro, sans-serif;
     color: #dfe2e7;
+    position: relative;
+}
+
+.feature_divider:after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 1px;
+    height: 110px;
+    color: #fff;
+    background-color: #fff;
 }
     
 .features_section .feature_item{
@@ -480,12 +493,28 @@ a:hover{
 /* Start Services page */ 
 .services_section{
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .service_item{
     font-size: 18px;
     color: #393939;
-    padding-bottom: 60px;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.service_item_line{
+    display: none;
+    margin: 0 auto;
+    width: 44%;
+    border-bottom: 1px solid #393939;
+}
+
+.service_item_line_lg{
+    display: block;
+    margin: 0 auto;
+    width: 44%;
+    border-bottom: 1px solid #393939;
 }
 
 .service_item a{
@@ -498,6 +527,7 @@ a:hover{
     flex-direction: column;
     text-align: center;
     height: 100%;
+    padding-bottom: 50px;
 }
 
 .service_icon {
@@ -527,6 +557,7 @@ a:hover{
     align-items: flex-end;
 
 }
+
 /* End Services page */
 /* Start Service Item page */
 .service_item_section{
@@ -698,7 +729,7 @@ ul.lawlist{
 
 
 /*** Start Media query ***/
-/* Start max-width: 992px and min-width: 1199px */
+/* Start min-width: 992px and max-width: 1199px */
 @media (min-width: 992px) and (max-width: 1199px)  {
 .heroscreen_section{
     background-size: contain;
@@ -711,7 +742,7 @@ ul.lawlist{
 }
 
 
-}/* End max-width: 992px and min-width: 1199px */
+}/* End min-width: 992px and max-width: 1199px */
 /* Start max-width: 991px*/
 @media (max-width: 991px)  {
 
@@ -723,6 +754,10 @@ ul.lawlist{
 
 .heroscreen_section h1{
     margin-top: 60px;
+}
+
+.feature_divider:after{
+    display: none;
 }
 
 } /* End max-width: 991px*/
@@ -744,11 +779,19 @@ ul.lawlist{
     border-right: 8px solid #6C7E9B;
 }
 
+.service_item_line{
+    width: 34%;
+    display: block;
+}
+
+
+
 } /* End max-width: 767px*/
 /* Start max-width: 575px */
 @media (max-width: 575px)  {
 
 .heroscreen_section{
+    background-image:none!important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -796,6 +839,11 @@ ul.lawlist{
     font-size: 30px;
     margin-bottom: 30px;
 }
+
+.service_item_line{
+    width: 26%;
+}
+
 
 } /* End max-width: 575px */
 /*** End Media query ***/

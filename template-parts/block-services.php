@@ -24,6 +24,7 @@
 					<img class="service_icon" src="<?php assets_url('img/svg/service_1.svg') ?>" alt="service_icon">
 					<span class="service_text"><?php echo get_the_title($service_1); ?></span>
 				</a>
+				<span class="service_item_line service_item_line_lg"></span>
 			</div>
 		<?php endif; ?>
 
@@ -33,6 +34,7 @@
 					<img class="service_icon" src="<?php assets_url('img/svg/service_2.svg') ?>" alt="service_icon">
 					<span class="service_text"><?php echo get_the_title($service_2); ?></span>
 				</a>
+				<span class="service_item_line service_item_line_lg"></span>
 			</div>
 		<?php endif; ?>
 
@@ -42,6 +44,7 @@
 					<img class="service_icon" src="<?php assets_url('img/svg/service_3.svg') ?>" alt="service_icon">
 					<span class="service_text"><?php echo get_the_title($service_3); ?></span>
 				</a>
+				<span class="service_item_line service_item_line_lg"></span>
 			</div>
 		<?php endif; ?>
 
@@ -51,6 +54,7 @@
 					<img class="service_icon" src="<?php assets_url('img/svg/service_4.svg') ?>" alt="service_icon">
 					<span class="service_text"><?php echo get_the_title($service_4); ?></span>
 				</a>
+				<span class="service_item_line service_item_line_lg"></span>
 			</div>
 		<?php endif; ?>
 
@@ -60,6 +64,7 @@
 					<img class="service_icon" src="<?php assets_url('img/svg/service_5.svg') ?>" alt="service_icon">
 					<span class="service_text"><?php echo get_the_title($service_5); ?></span>
 				</a>
+				<span class="service_item_line"></span>
 			</div>
 		<?php endif; ?>
 
@@ -69,6 +74,7 @@
 					<img class="service_icon" src="<?php assets_url('img/svg/service_6.svg') ?>" alt="service_icon">
 					<span class="service_text"><?php echo get_the_title($service_6); ?></span>
 				</a>
+				<span class="service_item_line"></span>
 			</div>
 		<?php endif; ?>
 
@@ -78,6 +84,7 @@
 					<img class="service_icon" src="<?php assets_url('img/svg/service_7.svg') ?>" alt="service_icon">
 					<span class="service_text"><?php echo get_the_title($service_7); ?></span>
 				</a>
+				<span class="service_item_line"></span>
 			</div>
 		<?php endif; ?>
 
@@ -87,10 +94,9 @@
 					<img class="service_icon" src="<?php assets_url('img/svg/service_8.svg') ?>" alt="service_icon">
 					<span class="service_text"><?php echo get_the_title($service_8); ?></span>
 				</a>
+				<span class="service_item_line"></span>
 			</div>
 		<?php endif; ?>
-			
-
 		</div>
 	</div>
 </div>
