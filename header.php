@@ -5,9 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<meta name="description" content="Корецька Ірина - приватний судовий виконавець Виконавчого округу м.Києва - послуги, консультація, допомога ☎ (067) 123-40-47">
-	
-	<title><?php echo "Приватний виконавець Київ: послуги судового виконавця"; ?></title>
+	<!-- <meta name="description" content="Корецька Ірина - приватний судовий виконавець Виконавчого округу м.Києва - послуги, консультація, допомога ☎ (067) 123-40-47"> -->
+	<title><?php bloginfo('name'); ?><?php wp_title("|"); ?></title>
 	<?php wp_head(); ?>
 </head>
 
@@ -30,7 +29,8 @@
 				<a href="mailto:<?php the_field('admin_email', 'theme_settings'); ?>"><?php the_field('admin_email', 'theme_settings'); ?></a>
 			</div>
 
-			<div class="lang_menu col-lg-1 col-md-1 col-sm-3 col-3 text-center">
+			<div class="lang_menu col-lg-1 col-md-2 col-sm-3 col-3 text-center">
+				<img src="<?php assets_url('img/trident.png') ?>" alt="trident">
 				<?php wp_nav_menu( array('theme_location' => 'lang_menu') ); ?>
 			</div>
 		</div>
