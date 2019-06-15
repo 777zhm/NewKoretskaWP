@@ -209,6 +209,10 @@ a:hover{
     width: 100%;
 }
 
+.main_menu ul li.current-menu-item a:after{
+    width: 100%;
+}
+
 /* End Main Menu */
 /* Start Lang Menu */
 .lang_menu {
@@ -495,6 +499,95 @@ a:hover{
 }
 
 
+
+
+.aboutus_wiki_section{
+   font-family: "GothamPro", sans-serif;
+   font-size: 14px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.aboutus_wiki_section h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.aboutus_wiki_section strong{
+    color: #000000;
+    font-family: "GothamPro", sans-serif;
+    font-weight: bold;
+}
+
+.aboutus_wiki_section ul{
+    list-style: none;
+}
+
+.aboutus_wiki_section ul li{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.aboutus_wiki_section ul li::before {
+	content: "";
+	background: url(assets/img/svg/mark-grey.svg) center/contain no-repeat;
+	color: #006b6e;  
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.about_icon{
+    max-height: 32px;
+    max-width: 32px;
+    margin-right: 8px;
+}
+
+.wiki_item_0{
+	padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    background-color: #f9f3f1;
+}
+
+.wiki_item_0 p{
+	margin-bottom: 0;
+}
+
+.wiki_item_main_block{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+    background-color: #f9f3f1;
+
+	padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.wiki_item_1, .wiki_item_2, .wiki_item_3{
+	width: 33%;
+	margin-right: 15px;
+}
+
+.wiki_item_4{
+	width: 100%;
+	padding: 30px;
+}
+
+
+
+.wiki_item_5{
+	background-color: #e0d9e8;
+	padding: 30px;
+    border-radius: 15px;
+}
+
 /* End About us page */ 
 /* Start Services page */ 
 .services_section{
@@ -765,6 +858,15 @@ ul.lawlist{
 .feature_divider:after{
     display: none;
 }
+
+.wiki_item_main_block{
+	display: block;
+}
+
+.wiki_item_1, .wiki_item_2, .wiki_item_3{
+	width: 100%;
+}
+
 
 } /* End max-width: 991px*/
 /* Start max-width: 767px */

@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<!-- <meta name="description" content="Корецька Ірина - приватний судовий виконавець Виконавчого округу м.Києва - послуги, консультація, допомога ☎ (067) 123-40-47"> -->
+	<meta name="description" content="Корецька Ірина - приватний судовий виконавець Виконавчого округу м.Києва - послуги, консультація, допомога ☎ (067) 123-40-47">
 	<title><?php bloginfo('name'); ?><?php wp_title("|"); ?></title>
 	<?php wp_head(); ?>
 </head>

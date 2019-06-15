@@ -19,6 +19,16 @@ function my_acf_init() {
         ));
 
         acf_register_block(array(
+            'name'              => 'aboutuswiki',
+            'title'             => __('About us wiki'),
+            'description'       => __('A custom about us wiki block.'),
+            'render_callback'   => 'custom_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'admin-page',
+            'keywords'          => array( 'contactus wiki, acf' ),
+        ));
+
+        acf_register_block(array(
             'name'              => 'features',
             'title'             => __('Features'),
             'description'       => __('A features block.'),
